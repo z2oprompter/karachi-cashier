@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Karachi Cashier — وردية كراتشي</title>
+<style>
+:root{--bg:#070b12;--glass:rgba(10,16,28,.86);--panel:#121b2b;--panel2:#17233a;--line:#2b3b56;--text:#f7f8fb;--muted:#99a6b9;--gold:#e8bb45;--gold2:#a87512;--green:#138143;--blue:#234c7d;--red:#a92727}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;background:#050912;color:var(--text)}
+body{overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:linear-gradient(180deg,rgba(3,8,14,.36),rgba(3,8,14,.92)),url("https://cdn.prod.website-files.com/692ed5d3034b098895dc32e3/6979ccf80bb0c3107c68894a_DSC00842_Optimized.jpg") center/cover no-repeat;filter:saturate(.9);z-index:-2}
+body:after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 50% 20%,rgba(255,190,55,.10),transparent 32%),rgba(0,0,0,.18);z-index:-1;pointer-events:none}
+button{font:inherit}.app{width:min(900px,100%);margin:auto;padding-bottom:30px}
+.top{position:sticky;top:0;z-index:50;background:rgba(5,10,18,.91);backdrop-filter:blur(18px);border-bottom:1px solid rgba(82,101,130,.35);padding:9px 10px}
+.hud{display:grid;grid-template-columns:1fr 1fr 1fr 1.8fr;gap:7px}.hudbox{min-height:62px;border:1px solid #263651;border-radius:16px;background:rgba(15,25,42,.9);display:grid;place-items:center;text-align:center}.hudbox b{font-size:17px}.hudbox small{font-size:10px;color:var(--muted)}.brand{display:flex;align-items:center;justify-content:flex-end;gap:10px;padding:7px 10px}.brand b{display:block;font-size:18px}.brand small{color:var(--muted)}.logo{width:45px;height:45px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,#f4d067,#b57d0e);color:#171207;font-weight:900;font-size:24px}
+main{padding:14px}
+.hero{border:1px solid rgba(92,113,145,.4);border-radius:25px;background:linear-gradient(145deg,rgba(12,20,34,.91),rgba(8,13,23,.80));padding:20px;box-shadow:0 18px 55px rgba(0,0,0,.28)}
+.hero h1{margin:0 0 5px;font-size:30px}.hero p{margin:0;color:#aeb9c9;line-height:1.75}.bar{height:7px;background:#0a101b;border-radius:9px;margin-top:14px;overflow:hidden}.bar i{display:block;height:100%;width:20%;background:linear-gradient(90deg,#f3d36e,#b27b0d);border-radius:9px}
+.section{margin-top:14px}.title{display:flex;justify-content:space-between;align-items:center;margin:0 3px 9px}.title h2{font-size:20px;margin:0}.badge{font-size:11px;color:#d7deea;background:#17253b;border:1px solid #2c3d58;border-radius:99px;padding:7px 11px}
+.customer{background:rgba(15,24,40,.92);border:1px solid #2a3a55;border-radius:23px;overflow:hidden}.chead{display:flex;align-items:center;gap:12px;padding:14px 17px;border-bottom:1px solid #27364e}.avatar{width:49px;height:49px;border-radius:50%;background:#253753;display:grid;place-items:center;font-size:26px}.chead b{font-size:17px}.chead small{display:block;color:var(--muted);font-size:11px}.order{padding:13px 16px;display:flex;gap:8px;flex-wrap:wrap}.req{border:1px solid #354864;background:#17253b;border-radius:13px;padding:8px 11px}.req b{color:#efc553}.req small{display:block;color:#8997ab;font-size:10px}.invoice{border-top:1px solid #27364e;padding:13px 17px}.r{display:flex;justify-content:space-between;padding:4px 0;color:#c7cfdb}.r.total{font-size:22px;color:#fff;font-weight:900;margin-top:2px}.payments{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:11px}.payments button{border-radius:16px;padding:14px;font-weight:900;border:1px solid}.cash{background:#0e7339;border-color:#25a65d!important}.card{background:#244b7c;border-color:#416a9c!important}
+.pos{background:rgba(13,22,37,.94);border:1px solid #2b3c58;border-radius:23px;padding:13px}.cats{display:flex;gap:7px;overflow:auto;scrollbar-width:none;padding:1px 0 12px}.cats::-webkit-scrollbar{display:none}.cat{white-space:nowrap;background:#17253b;color:#d7deea;border:1px solid #243751;border-radius:12px;padding:9px 13px}.cat.on{background:var(--gold);color:#151208;border-color:#f2d06c;font-weight:900}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.prod{background:#18263d;border:1px solid #2d405d;border-radius:18px;padding:8px;text-align:right;color:#fff;min-width:0;transition:.12s}.prod:active{transform:scale(.985)}.photo{height:135px;border-radius:13px;overflow:hidden;background:#293b55;position:relative}.photo img{width:100%;height:100%;display:block;object-fit:cover}.photo:after{content:"";position:absolute;inset:auto 0 0;height:35%;background:linear-gradient(transparent,rgba(0,0,0,.35));pointer-events:none}.pname{font-weight:850;margin-top:7px;font-size:15px}.price{color:#b8c3d3;margin-top:2px}.add{margin-top:7px;text-align:center;background:#223b5f;border-radius:11px;padding:8px;font-size:12px;font-weight:750}.cart{position:sticky;bottom:10px;margin-top:12px;background:rgba(7,13,23,.94);border:1px solid #354964;border-radius:18px;padding:11px;box-shadow:0 15px 45px rgba(0,0,0,.38);z-index:30}.carttop{display:flex;justify-content:space-between}.carttop b{font-size:18px}.confirm{width:100%;margin-top:8px;border:0;border-radius:14px;padding:13px;background:linear-gradient(145deg,#f1ce63,#b57d13);color:#151108;font-weight:900}.toast{position:fixed;left:50%;bottom:92px;transform:translate(-50%,20px);background:#f0c54f;color:#171207;border-radius:13px;padding:10px 16px;font-weight:850;opacity:0;transition:.2s;z-index:100}.toast.show{opacity:1;transform:translate(-50%,0)}.modal{position:fixed;inset:0;display:none;place-items:center;background:rgba(0,0,0,.72);padding:18px;z-index:90}.modal.show{display:grid}.dialog{width:min(430px,100%);background:#111b2c;border:1px solid #3b4f6c;border-radius:24px;padding:22px;text-align:center;box-shadow:0 25px 70px #000}.dialog h2{margin:0 0 8px}.dialog p{color:#b4bfce;line-height:1.7}.dialog button{background:var(--gold);color:#171207;border:0;border-radius:13px;padding:12px 24px;font-weight:900}
+@media(min-width:720px){.grid{grid-template-columns:repeat(4,1fr)}.photo{height:125px}}
+@media(max-width:430px){.hud{grid-template-columns:.85fr .9fr .85fr 1.65fr}.hudbox{min-height:58px}.brand b{font-size:15px}.brand small{font-size:9px}.logo{width:40px;height:40px}.hero h1{font-size:26px}.grid{gap:8px}.photo{height:120px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="top"><div class="hud">
+<div class="hudbox"><div><b id="time">150s</b><small>الوقت</small></div></div>
+<div class="hudbox"><div><b id="profit">0.00 د.ل</b><small>الأرباح</small></div></div>
+<div class="hudbox"><div><b id="stage">1</b><small>المرحلة</small></div></div>
+<div class="hudbox brand"><div><b>Karachi Cashier</b><small>محاكي كاشير متجر التوابل</small></div><span class="logo">K</span></div>
+</div></header>
+<main>
+<section class="hero"><h1>ورديّة كراتشي</h1><p>متجر توابل حقيقي، زبائن، طلبات، وقت محدود وأرباح. نفّذ الطلب كما هو ثم اختر طريقة الدفع.</p><div class="bar"><i id="progress"></i></div></section>
+<section class="section"><div class="title"><h2>الزبون الحالي</h2><span class="badge" id="status">بانتظار الطلب</span></div>
+<div class="customer"><div class="chead"><span class="avatar" id="avatar">👩🏻</span><div><b id="customer">سارة تنتظر الخدمة</b><small>الطلب ظاهر بالأسفل</small></div></div>
+<div class="order" id="order"></div>
+<div class="invoice"><div class="r"><span>الأصناف</span><b id="count">0</b></div><div class="r"><span>المجموع</span><b id="subtotal">0.00 د.ل</b></div><div class="r"><span>خصم</span><b>0.00 د.ل</b></div><div class="r total"><span>الإجمالي</span><b id="total">0.00 د.ل</b></div>
+<div class="payments"><button class="cash" onclick="pay('نقداً')">نقداً 💵</button><button class="card" onclick="pay('بطاقة')">بطاقة 💳</button></div></div></div></section>
+<section class="section"><div class="title"><h2>نقطة البيع POS</h2><span class="badge">اضغط لإضافة المنتج</span></div>
+<div class="pos"><div class="cats" id="cats"></div><div class="grid" id="grid"></div></div></section>
+<div class="cart"><div class="carttop"><span>الطلب الحالي</span><b id="cartTotal">0.00 د.ل</b></div><button class="confirm" onclick="checkOrder()">تأكيد تجهيز الطلب</button></div>
+</main></div>
+<div class="toast" id="toast"></div>
+<div class="modal" id="modal"><div class="dialog"><h2 id="mTitle"></h2><p id="mText"></p><button onclick="closeModal()">متابعة</button></div></div>
+<script>
+const products=[
+{id:'olive',n:'زيت زيتون',p:18,c:'زيوت',img:'https://commons.wikimedia.org/wiki/Special:Redirect/file/Bottle_of_olive_oil.jpg'},
+{id:'thyme',n:'زعتر',p:7.5,c:'بهارات',img:'https://commons.wikimedia.org/wiki/Special:Redirect/file/Thyme.jpg'},
+{id:'pepper',n:'فلفل أسود',p:8,c:'بهارات',img:'https://commons.wikimedia.org/wiki/Special:Redirect/file/Black_pepper.jpg'},
+{id:'turmeric',n:'كركم',p:6,c:'بهارات',img:'https://commons.wikimedia.org/wiki/Special:Redirect/file/Turmeric.JPG'},
+{id:'cumin',n:'كمون',p:7,c:'بهارات',img:'https://commons.wikimedia.org/wiki/Special:Redirect/file/Cumin.jpg'},
+{id:'honey',n:'عسل طبيعي',p:22,c:'عسل',img:'https://commons.wikimedia.org/wiki/Special:Redirect/file/Honey_img.jpg'},
+{id:'rice',n:'أرز',p:9,c:'حبوب',img:'https://commons.wikimedia.org/wiki/Special:Redirect/file/Rice_grains.jpg'},
+{id:'lentil',n:'عدس',p:7,c:'حبوب',img:'https://commons.wikimedia.org/wiki/Special:Redirect/file/Lentil.jpg'},
+{id:'flour',n:'طحين',p:6.5,c:'حبوب',img:'https://commons.wikimedia.org/wiki/Special:Redirect/file/Flour.jpg'},
+{id:'dates',n:'تمر',p:14,c:'حبوب',img:'https://commons.wikimedia.org/wiki/Special:Redirect/file/Dates_fruit.jpg'},
+{id:'pasta',n:'مكرونة',p:8.5,c:'معجنات',img:'https://commons.wikimedia.org/wiki/Special:Redirect/file/Pasta.jpg'},
+{id:'sugar',n:'سكر',p:5,c:'حبوب',img:'https://commons.wikimedia.org/wiki/Special:Redirect/file/Sugar.JPG'}
+];
+let cart=[],target=[],stage=1,profit=0,seconds=150,filter='الكل';
+const customers=[['سارة','👩🏻'],['محمد','👨🏻'],['أحمد','👨🏽'],['ليلى','👩🏽'],['خالد','👨🏾'],['مريم','👩🏻‍🦱']];
+const cats=['الكل','بهارات','زيوت','حبوب','معجنات','عسل'];
+const $=id=>document.getElementById(id),money=x=>x.toFixed(2)+' د.ل';
+function renderCats(){ $('cats').innerHTML=cats.map(c=>`<button class="cat ${c===filter?'on':''}" onclick="setFilter('${c}')">${c}</button>`).join('');}
+function setFilter(c){filter=c;renderCats();renderProducts();}
+function renderProducts(){let list=products.filter(x=>filter==='الكل'||x.c===filter);$('grid').innerHTML=list.map(p=>`<button class="prod" onclick="add('${p.id}')"><div class="photo"><img src="${p.img}" alt="${p.n}" onerror="this.parentElement.style.background='#2a3b55';this.style.display='none'"></div><div class="pname">${p.n}</div><div class="price">${money(p.p)}</div><div class="add">＋ إضافة للفاتورة</div></button>`).join('');}
+function newTarget(){let pool=[...products],a=pool.splice(Math.floor(Math.random()*pool.length),1)[0],b=pool[Math.floor(Math.random()*pool.length)];target=[{id:a.id,qty:Math.floor(Math.random()*2)+1},{id:b.id,qty:Math.floor(Math.random()*2)+1}];renderOrder();}
+function renderOrder(){$('order').innerHTML=target.map(t=>{let p=products.find(x=>x.id===t.id);return `<div class="req"><b>${t.qty}× ${p.n}</b><small>المطلوب</small></div>`}).join('');}
+function add(id){let x=cart.find(a=>a.id===id);if(x)x.qty++;else cart.push({id,qty:1});update();let p=products.find(x=>x.id===id);toast('تمت إضافة '+p.n);}
+function update(){let total=0,count=0;cart.forEach(x=>{let p=products.find(a=>a.id===x.id);total+=p.p*x.qty;count+=x.qty});$('count').textContent=count;$('subtotal').textContent=money(total);$('total').textContent=money(total);$('cartTotal').textContent=money(total);$('status').textContent=count?'جارٍ تجهيز الطلب':'بانتظار الطلب';}
+function correct(){return target.length===cart.length&&target.every(t=>cart.some(x=>x.id===t.id&&x.qty===t.qty));}
+function checkOrder(){if(!cart.length){toast('أضف المنتجات المطلوبة أولاً');return}if(correct())show('طلب صحيح ⭐','ممتاز! الطلب مطابق تماماً. اختر الآن نقداً أو بطاقة لإكمال البيع.');else toast('الطلب غير مطابق — راجع الأصناف والكميات');}
+function pay(method){if(!cart.length){toast('لا توجد فاتورة للدفع');return}if(!correct()){toast('أكمل الطلب الصحيح أولاً');return}let total=cart.reduce((s,x)=>s+products.find(p=>p.id===x.id).p*x.qty,0);profit+=total*.10;$('profit').textContent=money(profit);show('تم البيع بنجاح 🎉','تم الدفع '+method+' وإضافة الربح. الزبون التالي جاهز.');stage=Math.min(5,stage+1);$('stage').textContent=stage;$('progress').style.width=(stage*20)+'%';cart=[];update();newTarget();let c=customers[Math.floor(Math.random()*customers.length)];$('customer').textContent=c[0]+' ينتظر الخدمة';$('avatar').textContent=c[1];}
+function show(t,p){$('mTitle').textContent=t;$('mText').textContent=p;$('modal').classList.add('show')}
+function closeModal(){$('modal').classList.remove('show')}
+function toast(s){$('toast').textContent=s;$('toast').classList.add('show');clearTimeout(window.tt);window.tt=setTimeout(()=>$('toast').classList.remove('show'),1600)}
+setInterval(()=>{if(seconds>0){seconds--;$('time').textContent=seconds+'s'}},1000);
+renderCats();renderProducts();newTarget();update();
+</script>
+</body></html>
